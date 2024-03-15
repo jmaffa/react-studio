@@ -11,3 +11,63 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#item-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 65vw;
+
+}
+.item-card{
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 25vw;
+  height: 35vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* justify-content: space-between; */
+}
+
+.item-card img{
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.item-card button{
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #fff;
+  cursor: pointer;
+}
+.item-card button:hover{
+  background-color: #303030;
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-list {
+  list-style-type: none;
+  margin-right: 20px;
+  padding: 0;
+}
+#items-and-cart{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+#cart-container{
+  width: 30vw;
+}
